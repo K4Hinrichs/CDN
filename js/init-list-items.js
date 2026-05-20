@@ -122,7 +122,7 @@ function addItem(addBtn) {
       listEl.insertAdjacentHTML('afterbegin', wrappedTemplate);
       wrappedItemEl = listEl.firstElementChild;
     }
-    else {
+    else if (insertLocation === 'bottom') {
       listEl.insertAdjacentHTML('beforeend', wrappedTemplate);
       wrappedItemEl = listEl.lastElementChild;
     }
